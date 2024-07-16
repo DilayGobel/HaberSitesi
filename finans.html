@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finans Sayfası</title>
+
+    <!--FONTLAR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/assets/css/main.css">
+
+    <link rel="stylesheet" href="./assets/assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+          <nav class="navbar">
+            <h1>HBR</h1>
+                  <a href="index.html">Gündem</a>
+                  <a href="finans.html" class="active">Finans</a>
+                  <a href="siyaset.html">Siyaset</a>
+                  <a href="dünyadan.html">Dünyadan</a>
+              
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+      </div>
+    </header>
+
+
+
+
+    <div class="sliderm">
+      <div class="card">
+        <img src="https://forex.com.tr/wp-content/uploads/2024/06/image-8.png" alt="resim1">
+        <div class="yazi">
+          <h2>Hiper Enflasyon Nedir</h2>
+          <p>
+            Ülkenin para biriminin aşırı ve kontrolsüz şekilde değer kaybetmesidir. Genellikle ekonomik ve politik istikrarsızlık, aşırı para basımı ve borçlanma gibi faktörlerin sonucunda ortaya çıkar.
+          </p>
+        </div>
+      </div>
+
+      <div class="card2" data-url="https://example.com/page2">        
+        <img src="https://www.evrensel.net/images/840/upload/dosya/176181.jpg" alt="resim1">  
+            <div class="yazi">
+              <h2>Yüksek Enflasyon Nedir</h2>
+              <p>
+                Fiyatlar hızla artar ve para biriminin değeri düşer. Bu tür bir enflasyon, ekonomik istikrarsızlığa, sosyal huzursuzluğa ve ekonomik durgunluğa yol açabilir.
+              </p>
+            </div>  
+      </div>
+
+      <div class="card3" data-url="https://example.com/page3">
+        <img src="https://yetkinreport.com/wp-content/uploads/2022/01/chart-1.png" alt="resim1">
+        <div class="yazi">
+          <h2>Düşük Enflasyon Nedir</h2>
+          <p>
+            Bu enflasyon türünde ileriye doğru kalıcı enflasyon beklentileri oluşmaz. Yaygın görünen türlerinden birisi budur. Ekonomide canlılık açısından yararlı olduğu, üretim ve yatırımı özendirdiği görüşü yaygındır.
+          </p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div> 
+   
+
+    <div class="container">
+      <div class="converter">
+          <h1>Döviz Çevirici</h1>
+          <div class="input-group">
+              <label for="amount">Miktar:</label>
+              <input type="number" id="amount" min="0" step="0.01">
+          </div>
+          <div class="drop-list">
+              <div class="input-group">
+                  <label for="from">İlk Değer:</label>
+                  <select id="from">
+                      <option value="USD">Amerikan Doları</option>
+                      <option value="EUR">Euro</option>
+                      <option value="GBP">İngiliz Sterlini</option>
+                      <option value="JPY">Japon Yeni</option>
+                      <option value="AUD">Avustralya Doları</option>
+                      <option value="CHF">İsviçre Frangı</option>
+                  </select>
+              </div>
+              
+              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+              <div class="input-group">
+                  <label for="to">Son Değer:</label>
+                  <select id="to">
+                      <option value="USD">Amerikan Doları</option>
+                      <option value="EUR">Euro</option>
+                      <option value="GBP">İngiliz Sterlini</option>
+                      <option value="JPY">Japon Yeni</option>
+                      <option value="AUD">Avustralya Doları</option>
+                      <option value="CHF">İsviçre Frangı</option>
+                  </select>
+              </div>
+          </div>    
+          <button onclick="convert()">Çevir</button>
+          <p id="result"></p>
+      </div>
+      
+      <div class="kurlar">
+          <h1>Döviz Kurları </h1>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Döviz</th>
+                      <th>Kurlar (TL)</th>
+                  </tr>
+              </thead>
+              <tbody id="exchange-rates">
+                  <tr>
+                      <td colspan="2">Yükleniyor...</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <script src="assets/js/country-list.js"></script>
+  <script src="assets/js/script.js"></script>
+
+
+<footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Dilay</span></strong>. Bütün Hakları Saklıdır(?)
+      </div>
+      <div class="credits">
+        Yapım: <a href="https://bootstrapmade.com/">Dilay Göbel</a>
+      </div>
+    </div>
+  </footer>
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</body>
+</html>

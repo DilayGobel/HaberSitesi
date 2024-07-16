@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.img{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.kart{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 20px;
+    min-width: 200px;
+    cursor: pointer;
+   
+    display: flex;
+    flex-direction: column;
+    
+    float: right;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    height: 20vh;
+    width: 50%;
+    background-color: white;
+   
+    overflow-x: auto;
+    gap: 10px;
+
+}
+
+.hr{
+    border: 2px solid black;
+    width: 50%;
+}
